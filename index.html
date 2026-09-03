@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         TOPPEN AF SIDEN
+         Ret navn, klasse og evt. fag.
+         ========================================================= -->
+    <header class="top">
+        <h1>Min portfolio</h1>
+        <p>Navn: Noah Lauridsen</p>
+        <p>Klasse: 2.Fysbio</p>
+    </header>
+
+
+    <!-- =========================================================
+         MENU
+         href="#om-mig" hopper til et område på samme side.
+         ========================================================= -->
+    <nav class="menu">
+        <a href="#om-mig">Om mig</a>
+        <a href="#projekter">Mine projekter</a>
+        <a href="#refleksion">Refleksion</a>
+    </nav>
+
+
+    <main class="container">
+
+        <!-- =====================================================
+             OM MIG
+             Skriv en kort præsentation af dig selv.
+             ===================================================== -->
+        <section class="blok" id="om-mig">
+            <h2>Om mig</h2>
+
+            <p>
+                Skriv lidt om dig selv her. Du kan for eksempel skrive om
+                dine interesser, hvad du gerne vil lære, og hvad du arbejder med.
+            </p>
+
+            <!-- PROFILBILLEDE
+                 1. Læg billedet i mappen "billeder".
+                 2. Ret profil.jpg til dit eget filnavn.
+                 3. Ret teksten i alt="...".
+
+                 Fjern kommentar-markeringerne omkring figure-blokken herunder,
+                 når du vil vise et profilbillede.
+            -->
+
+            <!--
+            <figure>
+                <img src="billeder/profil.jpg" alt="Billede af mig">
+                <figcaption>Et billede af mig.</figcaption>
+            </figure>
+            -->
+        </section>
+
+
+        <!-- =====================================================
+             MINE PROJEKTER
+             Projektblokke placeres under denne overskrift.
+             ===================================================== -->
+        <section class="blok" id="projekter">
+            <h2>Mine projekter og opgaver</h2>
+            <p>
+                Her samler jeg de projekter og opgaver, som jeg arbejder med.
+            </p>
+        </section>
+
+
+        <!-- =====================================================
+             PROJEKTSKABELON
+
+             Kopiér HELE denne <section>...</section>, når du vil
+             oprette endnu et projekt.
+             ===================================================== -->
+        <section class="blok projekt">
+
+            <h2>Projekt 1: Skriv projektets titel</h2>
+
+            <h3>Opgaven</h3>
+            <p>
+                Beskriv kort, hvad opgaven eller projektet går ud på.
+            </p>
+
+            <h3>Mit arbejde</h3>
+            <p>
+                Beskriv, hvad du har lavet, og hvordan du har arbejdet med opgaven.
+            </p>
+
+
+            <!-- =================================================
+                 BILLEDE
+                 1. Læg billedet i mappen "billeder".
+                 2. Ret filnavnet efter src="...".
+                 3. Ret billedteksten.
+                 ================================================= -->
+            <figure>
+                <img src="billeder/mit-projekt.jpg" alt="Billede af mit projekt">
+                <figcaption>
+                    Figur 1: Skriv en kort forklaring til billedet.
+                </figcaption>
+            </figure>
+
+
+            <!-- =================================================
+                 KODEBLOK
+                 Skriv eller indsæt kode mellem <code> og </code>.
+                 Indrykningen bliver bevaret på hjemmesiden.
+                 ================================================= -->
+            <h3>Min kode</h3>
+
+<pre><code># Indsæt din kode her
+
+for i in range(5):
+    print("Hej verden")</code></pre>
+
+
+            <!-- =================================================
+                 LINK
+                 Ret adressen efter href="...".
+                 Ret teksten mellem <a> og </a>.
+                 ================================================= -->
+            <h3>Links</h3>
+
+            <p>
+                <a class="knap"
+                   href="https://example.com"
+                   target="_blank"
+                   rel="noopener">
+                    Åbn mit projekt
+                </a>
+            </p>
+
+            <p>
+                Du kan også lave et almindeligt link:
+                <a href="https://example.com" target="_blank" rel="noopener">
+                    Klik her
+                </a>
+            </p>
+
+
+            <!-- =================================================
+                 TEST / RESULTATER
+                 Kopiér en <tr>...</tr>-blok for at få flere rækker.
+                 ================================================= -->
+            <h3>Test og resultater</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Forventning</th>
+                        <th>Resultat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hvad tester jeg?</td>
+                        <td>Hvad forventer jeg?</td>
+                        <td>Hvad skete der?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h3>Hvad gik godt?</h3>
+            <p>
+                Skriv kort, hvad der fungerede godt i projektet.
+            </p>
+
+            <h3>Hvad var svært?</h3>
+            <p>
+                Skriv om en fejl, en udfordring eller noget, du måtte undersøge.
+            </p>
+
+            <h3>Hvad lærte jeg?</h3>
+            <p>
+                Skriv 2-4 linjer om det vigtigste, du lærte.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             EKSTRA PROJEKT
+             Kopiér projektblokken ovenfor og indsæt den her,
+             når du får en ny opgave.
+             ===================================================== -->
+
+
+        <!-- =====================================================
+             REFLEKSION
+             Bruges til en samlet refleksion over et forløb.
+             ===================================================== -->
+        <section class="blok" id="refleksion">
+            <h2>Min refleksion</h2>
+
+            <p>
+                Det vigtigste, jeg har lært indtil nu, er ...
+            </p>
+
+            <p>
+                Noget jeg er blevet bedre til, er ...
+            </p>
+
+            <p>
+                Næste gang vil jeg gerne blive bedre til ...
+            </p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Min portfolio</p>
+    </footer>
+
+</body>
+</html>

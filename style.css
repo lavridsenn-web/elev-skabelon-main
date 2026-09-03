@@ -1,0 +1,220 @@
+/* ==============================================================
+   GRUNDLÆGGENDE OPSÆTNING
+   Eleverne behøver normalt ikke ændre noget i denne fil.
+   ============================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f3f5f7;
+    color: #222;
+}
+
+
+/* ==============================================================
+   TOPPEN
+   ============================================================== */
+
+.top {
+    padding: 48px 20px;
+    text-align: center;
+    background: #243447;
+    color: white;
+}
+
+.top h1 {
+    margin: 0 0 12px 0;
+    font-size: 2.4rem;
+}
+
+.top p {
+    margin: 4px 0;
+}
+
+
+/* ==============================================================
+   MENU
+   ============================================================== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #d7dce2;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.menu a {
+    padding: 8px 12px;
+    color: #243447;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background: #e9eef3;
+}
+
+
+/* ==============================================================
+   SIDENS INDHOLD
+   ============================================================== */
+
+.container {
+    width: min(1000px, 92%);
+    margin: 32px auto;
+}
+
+.blok {
+    margin-bottom: 28px;
+    padding: 28px;
+    background: white;
+    border: 1px solid #dfe3e8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.blok h2 {
+    margin-top: 0;
+    color: #243447;
+}
+
+.projekt {
+    border-left: 6px solid #4f6f8f;
+}
+
+
+/* ==============================================================
+   BILLEDER
+   ============================================================== */
+
+figure {
+    margin: 24px 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #dfe3e8;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: #5c6670;
+    font-size: 0.95rem;
+}
+
+
+/* ==============================================================
+   KODE
+   ============================================================== */
+
+pre {
+    overflow-x: auto;
+    padding: 18px;
+    background: #1f2933;
+    color: #f7f7f7;
+    border-radius: 8px;
+}
+
+code {
+    font-family: Consolas, Monaco, "Courier New", monospace;
+}
+
+
+/* ==============================================================
+   LINKS OG KNAPPER
+   ============================================================== */
+
+a {
+    color: #245d91;
+}
+
+.knap {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #245d91;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.knap:hover {
+    background: #19466d;
+}
+
+
+/* ==============================================================
+   TABELLER
+   ============================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #cfd6dd;
+}
+
+th {
+    background: #e9eef3;
+}
+
+
+/* ==============================================================
+   FOOTER
+   ============================================================== */
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #243447;
+    color: white;
+}
+
+
+/* ==============================================================
+   MOBILVISNING
+   ============================================================== */
+
+@media (max-width: 600px) {
+    .top {
+        padding: 34px 16px;
+    }
+
+    .top h1 {
+        font-size: 1.9rem;
+    }
+
+    .blok {
+        padding: 20px;
+    }
+
+    .menu {
+        position: static;
+    }
+}

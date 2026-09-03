@@ -1,0 +1,10 @@
+Læg elevens billeder i denne mappe.
+
+Eksempel:
+- profil.jpg
+- mit-projekt.jpg
+- robot.png
+
+Filnavnet i HTML-filen skal være det samme som billedets filnavn.
+Eksempel:
+<img src="billeder/robot.png" alt="Min robot">
